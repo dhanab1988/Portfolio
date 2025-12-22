@@ -1,0 +1,464 @@
+* {
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+}
+
+/* Font Awesome fix */
+.fa,
+.fa-brands,
+.fa-solid {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;
+    font-weight: 400;
+}
+
+body {
+   padding: 0;
+    margin: 0;
+    background-color: #f3f8f4;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+#hero {
+    min-height: 100vh;
+       overflow: hidden;
+       gap: 40px;
+}
+
+header {
+      display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+ 
+    animation: topIn 1.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+header nav
+{
+    margin-left: 80px;
+}
+
+.header-logo {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(43, 58, 85, 0.9);
+    letter-spacing: 0.2rem;
+}
+
+.header-logo span {
+    font-size: 40px;
+    color: #2e7d32;
+    line-height: 0.2;
+
+}
+
+nav {
+    
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.nav-item {
+   
+    font-size: 22px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #2e7d32;
+    transform: scale(1.1);
+}
+
+.header-btn {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2e7d32;
+    color: white;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0.1rem;
+}
+
+.header-btn:hover {
+    background-color: #1b5e20;
+}
+.hero-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+   
+}
+
+
+/* ================= CONTENT ================= */
+
+.content {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 150px;   /* 👈 controls left-right space */
+    row-gap: 60px;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.content h3 {
+    font-size: 3rem;
+    color: rgba(43, 58, 85, 0.9);
+    text-shadow: 1px 1px #66bb6a;
+    animation: bottomIn 1s ease forwards;
+    opacity: 0;
+}
+
+.content h1 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: rgba(43, 58, 85, 0.9);
+    letter-spacing: 5px;
+    margin: -25px 0;
+    text-shadow: 2px 2px #1b5e20;
+    animation: bottomIn 1.3s ease forwards;
+    opacity: 0;
+}
+
+.content h1 span {
+    color: #2e7d32;
+}
+
+.content p {
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: grey;
+    animation: bottomIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+/* ================= CTA ================= */
+
+.cta-section {
+    display: flex;
+    gap: 40px;
+    animation: bottomIn 1.4s ease forwards;
+    opacity: 0;
+}
+
+.cta-section .cta-1{
+    display: inline-flex;  
+    font-size: 20px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;                   /* space between text and icon */
+    padding: 10px 20px;         /* button size */
+    background-color: #2b3a55;  /* button color */
+    color: white;               /* text color */
+    border: none;               /* remove border */
+    border-radius: 8px;         /* rounded corners */
+    text-decoration: none;      /* remove underline for links */
+    cursor: pointer;            /* pointer on hover */
+    transition: 0.3s;
+   box-shadow: 0 5px 5px rgba(46, 125, 50, 0.4);
+}
+.cta-section .cta-2{
+    display: inline-flex;  
+    font-size: 20px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;                   /* space between text and icon */
+    padding: 10px 20px;         /* button size */
+   color: #2b3a55;               /* text color */
+    border: #2b3a55 solid ;               /* remove border */
+    border-radius: 8px;         /* rounded corners */
+    text-decoration: none;      /* remove underline for links */
+    cursor: pointer;            /* pointer on hover */
+    transition: 0.3s;
+   box-shadow: 0 5px 5px rgba(46, 125, 50, 0.4);
+}
+
+.cta-section a:hover {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    transform: scale(1.05);
+}
+
+
+/* ================= HERO IMAGE FIX ================= */
+
+.img-wrap {
+    width: 320px;
+    height: 420px;
+    border-radius: 50%;
+    padding: 12px;
+    background: linear-gradient(135deg, #c5e1a5, #81c784);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 25px rgba(46, 125, 50, 0.25);
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* VERY IMPORTANT */
+    border-radius: 50% / 40%;
+    box-shadow: 0 12px 25px rgba(46, 125, 50, 0.35);
+    animation: imgIn 1.4s ease forwards;
+    .hero-img {
+    filter: brightness(1.03) contrast(1.02);
+}
+}
+
+
+/* ================= SECTIONS ================= */
+
+section:not(#hero) {
+    padding: 10px 20px;
+    animation: bottomIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: rgba(43, 58, 85, 0.9);
+    text-shadow: 1px 1px #66bb6a;
+}
+
+section p {
+    font-size: 1.3rem;
+    color: grey;
+    max-width: 800px;
+}
+
+/* ================= ABOUT ================= */
+#about p
+{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#about li {
+    
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    background-color: rgba(43, 58, 85, 0.9);
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    max-width: 500px;
+    width: 80%;
+}
+
+/* ==================EDUCATION ================== */
+
+#education ul {
+    padding: 20px;
+
+    margin-bottom: 50px;
+}
+
+#education li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    background-color: rgba(43, 58, 85, 0.9);
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+     max-width: 500px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(46, 125, 50, 0.25);
+    transition: 0.3s;
+}
+
+#education li strong {
+    color: #66bb6a;
+    letter-spacing: 0.05rem;
+}
+
+#education li:hover {
+    transform: translateX(8px);
+}
+
+
+
+/* ================= PORTFOLIO ================= */
+
+#portfolio .project {
+    color:#2b3a55;
+    background: rgba(46, 125, 50, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.project p
+{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ================= CONTACT ================= */
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* ================= SOCIAL ================= */
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+.social-section a {
+    text-decoration: none;
+}
+
+.social-section i {
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgba(43, 58, 85, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(43, 58, 85, 0.9);
+    transition: 0.3s;
+}
+
+.social-section i:hover {
+    color: #2e7d32;
+    border-color: #2e7d32;
+    transform: scale(1.1);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes bottomIn {
+    from { transform: translateY(250px); }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes topIn {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes imgIn {
+    from { transform: translateY(250px) scale(0.8); }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* ================= RESPONSIVE (ALL SECTIONS) ================= */
+
+@media screen and (max-width: 768px) {
+
+    /* About & Education lists */
+    #about ul,
+    #education ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #about li,
+    #education li {
+        font-size: 1.1rem;
+        padding: 18px 22px;
+        text-align: center;
+    }
+
+    /* Section headings */
+    section h2,
+    section h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* Portfolio cards */
+    #portfolio .project {
+        padding: 15px;
+    }
+
+    /* Contact text */
+    #contact p {
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    /* Social icons */
+    .social-section {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .img-wrap {
+    width: 260px;
+    height: 340px;
+    margin: 30px auto;
+  }
+}
+
+/* ================= EXTRA SMALL DEVICES ================= */
+
+@media screen and (max-width: 428px) {
+
+    section h2,
+    section h3 {
+        font-size: 2rem;
+    }
+
+    #about li,
+    #education li {
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+
+    .social-section i {
+        height: 36px;
+        width: 36px;
+    }
+}
