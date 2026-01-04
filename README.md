@@ -83,10 +83,10 @@ A restaurant web application built with React and CSS featuring:
 ---
 
 ## 📬 Contact
-- **Email:** dhanalkshmijanu2015@gmail.com  
+- **Email:** dhanalakshmijanu2015@gmail.com  
 - **Phone:** +91 8825863815  
 - **GitHub:** https://github.com/dhanab1988  
-- **LinkedIn:** https://www.linkedin.com/in/yourusername  
+- **LinkedIn:** [https://www.linkedin.com/in/yourusername](https://www.linkedin.com/in/dhanalakshmi-balakrishnan-a868553a2/)  
 
 ---
 
@@ -99,3 +99,4 @@ This portfolio is created to:
 ---
 
 ⭐ If you like this project, feel free to star the repository!
+
