@@ -70,6 +70,15 @@ A restaurant web application built with React and CSS featuring:
 - Reservation system
 - Interactive user interface
 
+### 🔹 To-do List
+To-Do List Web Application built with HTML, CSS, and JavaScript featuring:
+
+- Add, edit, and delete tasks
+- Mark tasks as completed with checkmarks
+- Filter tasks by All / Completed / Pending
+- Tasks saved in browser localStorage
+- Responsive design with smooth animations
+
 ---
 
 ## 🚀 How to Run Locally
@@ -99,4 +108,5 @@ This portfolio is created to:
 ---
 
 ⭐ If you like this project, feel free to star the repository!
+
 
